@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВЕРНИ СТРАХОВКУ</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- fonts -->
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/media.min.css">
+    <!-- styles -->
+
+</head>
+
+<body>
+    <nav class="nav bg-light-blue">
+        <div class="container">
+            <div class="nav__main">
+
+                <div class="nav__main--logo">
+                    <img src="./img/logo.svg" alt="логотип">
+                    <p class="fw900"><span>ВЕРНИ</span><br> СТРАХОВКУ</p>
+                </div>
+
+                <p class="nav__main--title">МЫ РАБОТАЕМ <span class="fw900">СО ВСЕМИ БАНКАМИ</span> РОССИИ</p>
+
+                <button data-modal class="btn nav__main--btn">Заказать звонок</button>
+
+                <button data-modal-mob class="nav__main--mob"><img src="./img/btn-mob.svg" alt="кнопка"></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+
+        <!-- при вызове модалки, окна спасибо и Квиза - к блоку с контентом header__main
+             будет добавлятся класс .header__main--active - который
+              содержит эффект filter:blur (7px) -->
+
+        <!-- modal -->
+        <div class="modal">
+            <div class="modal__dialog">
+                <img class="close" src="./img/close.svg" alt="крестик">
+
+                <h4 class="modal__dialog--title title">Оставьте номер и наш юрист
+                    свяжется с вами в ближайшее время</h4>
+                <form class="modal__dialog--form" action="">
+                    <div class="">
+                        <input class="modal__dialog--form-input input fw400" placeholder="Введите ваше имя" type="text">
+                    </div>
+                    <div class="">
+                        <input class="modal__dialog--form-input input fw400" placeholder="+7 (_ _ _) ___ - _ _ - _ _"
+                            type="text">
+                    </div>
+                </form>
+                <button class="btn modal__dialog--btn">Подать заявку</button>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <!-- thanks -->
+        <div style="display:none;" class="thanks">
+            <div class="thanks__main">
+                <button>
+                    <img src="./img/close.svg" alt="">
+                </button>
+
+                <img class="thanks__main--icon" src="./img/modal-thanks-icon.svg" alt="иконка">
+
+                <h4 class="title">Заявка отправлена</h4>
+
+                <p>Мы получили Вашу заявку <br>
+                    В ближайшее время с Вами свяжется юрист</p>
+            </div>
+        </div>
+        <!-- thanks -->
+
+        <!-- quiz -->
+        <div style="display:none;" class="quiz">
+            <div class="quiz__main">
+                <img class="quiz__main--close" src="./img/close.svg" alt="">
+
+                <!-- 1 -->
+                <div style="display:;" class="quiz__main--content">
+                    <h2 class="title">Оставьте номер и наш юрист
+                        свяжется с вами в ближайшее время</h2>
+
+                    <form class="quiz__form">
+                        <div class="quiz__form--wrapper" for="">
+                            <input checked="" type="radio" name="1" class="quiz__form--input">
+                            <label class="quiz__form--label">Меньше 14 дней назад</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="1" class="quiz__form--input">
+                            <label class="quiz__form--label">Больше 14 дней назад</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="1" class="quiz__form--input">
+                            <label class="quiz__form--label">Только готовлюсь брать</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- 1 -->
+
+                <!-- 1.1 -->
+                <!-- Если в 1 выбран ответ: <label class="quiz__form--label">Больше 14 дней назад</label>, тогда появляется эта карточка, а кнопка <button class="btn btn__next">Далее</button> - скрывается! -->
+                <div style="display:none;" class="quiz__main--content">
+                    <h2 class="title">Больше 14 дней</h2>
+
+                    <p class="quiz__main--content_description">К сожалению, законодательство не предполагает возврат
+                        страхования по истечении 14 дней после
+                        взятия кредита. Рекомендуем вам учитывать это в дальнейшем
+                        и обратиться к нам до истечения данного периода.</p>
+                </div>
+                <!-- 1.1 -->
+
+                <!-- 2 -->
+                <div style="display:none;" class="quiz__main--content">
+                    <h2 class="title">Город где оформили кредит?</h2>
+
+                    <form class="quiz__form">
+                        <div class="quiz__select--wrapper">
+                            <select class="quiz__form--select" name="Новосибирская область" id="">
+                                <option value="">Новосибирская область</option>
+                                <option value="">Новосибирская область</option>
+                                <option value="">Новосибирская область</option>
+                                <option value="">Новосибирская область</option>
+                            </select>
+
+                            <img src="./img/select-decor.svg" alt="декоративный элемент">
+                        </div>
+                    </form>
+                </div>
+                <!-- 2 -->
+
+                <!-- 3 -->
+                <div style="display:none;" class="quiz__main--content">
+                    <h2 class="title">В каком банке?</h2>
+
+                    <form class="quiz__form quiz__form--banks">
+                        <div class="quiz__form--wrapper" for="">
+                            <input checked="" type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">Сбербанк</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">Тинькофф</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">ВТБ банк</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">Альфа банк</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">Промсвязьбанк</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">Совкомбанк</label>
+                        </div>
+
+                        <div class="quiz__form--wrapper" for="">
+                            <input type="radio" name="2" class="quiz__form--input">
+                            <label class="quiz__form--label">Другой банк</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- 3 -->
+
+                <!-- 4 -->
+                <div style="display:none;" class="quiz__main--content">
+                    <h2 class="title">На какую сумму страхование?</h2>
+
+                    <form class="quiz__form">
+                        <div class="quiz__input--wrapper">
+                            <input class="input" placeholder="Введите сумму" type="text">
+                        </div>
+                    </form>
+                </div>
+                <!-- 4 -->
+
+                <!-- last-step -->
+                <div style="display:none;" class="quiz__main--content">
+                    <h2 class="title">Оставьте номер и наш юрист
+                        свяжется с вами в ближайшее время</h2>
+
+                    <form class="quiz__form">
+                        <div class="quiz__input--wrapper">
+                            <input class="input" placeholder="Ваше имя" type="text">
+                        </div>
+                        <div class="quiz__input--wrapper">
+                            <input class="input" placeholder="+7 (_ _ _) ___ - _ _ - _ _" type="text">
+                        </div>
+                    </form>
+                </div>
+                <!-- last-step -->
+
+                <!-- thanks-quiz -->
+                <!-- при Окне спасибо в квизе блок quiz__main--btn - скрывается -->
+                <div style="display:none;" class="quiz__main--thanks">
+
+                    <img src="./img/quiz-thanks-icon.svg" alt="">
+
+                    <h2 class="title">Спасибо за ответы</h2>
+
+                    <p class="quiz-thanks-text">Ваши ответы приняты в обработку.
+                        В ближайшее время с Вами свяжется юрист</p>
+
+                </div>
+                <!-- thanks-quiz -->
+
+                <div class="quiz__main--btn">
+                    <button class="btn btn__prev">Назад</button>
+                    <button class="btn btn__next">Далее</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- quiz -->
+
+        <!-- при вызове модалки, окна спасибо и Квиза - к блоку с контентом header__main
+             будет добавлятся класс .header__main--active - который
+              содержит эффект filter:blur (7px) -->
+
+        <div class="container">
+            <div class="header__main">
+                <div class="header__main--description">
+
+                    <p class="header__main--description_top">МЫ РАБОТАЕМ <span class="fw900">СО ВСЕМИ БАНКАМИ</span>
+                        РОССИИ</p>
+
+                    <h1 class="fw900">ВОЗВРАТ СТРАХОВКИ
+                        ПО КРЕДИТУ <span>ЗА 1 ДЕНЬ</span> В ПОЛНОМ ОБЪЕМЕ</h1>
+
+                    <img src="./img/general-img.png" alt="">
+
+                    <p>Узнайте, можно ли вернуть страховку ответив всего на 5 вопросов.</p>
+
+                    <button class="btn">Вернуть страховку</button>
+
+                    <span>*Возврат страховки возможен в течение 14 дней с момента получения кредита</span>
+                </div>
+
+                <img class="header__main--img" src="./img/general-img.png" alt="главная картинка">
+
+                <div class="header__main--icon">
+                    <div>
+                        <img src="./img/general-icon-1.svg" alt="">
+                        <p>Возврат страховки не влияет на кредитную историю</p>
+                    </div>
+
+                    <div>
+                        <img src="./img/general-icon-2.svg" alt="">
+                        <p>Короткие сроки</p>
+                    </div>
+
+                    <div>
+                        <img src="./img/general-icon-3.svg" alt="">
+                        <p>Банк не поднимет
+                            процентную ставку</p>
+                    </div>
+
+                    <div>
+                        <img src="./img/general-icon-4.svg" alt="">
+                        <p>Без предоплаты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <section class="detail bg-light-blue">
+
+        <button class="detail__btn">Контактные данные &darr;</button>
+
+        <div class="detail__main">
+            <button class="detail__btn--close">Скрыть &#8593;</button>
+
+            <p>ИП ШАРДИН ВАЛЕРИЙ ВАЛЕРЬЕВИЧ
+                Адрес: г. Новосибирск, ул. Ленина 10</p>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

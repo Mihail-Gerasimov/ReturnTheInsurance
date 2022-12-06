@@ -1,0 +1,417 @@
+@media (max-width: 1600px) {
+    .header__main--description h1 {
+        max-width: 528px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .header__main--description p {
+        max-width: 430px;
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .header__main--description>span {
+        max-width: 460px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .header__main--img {
+        max-width: 370px;
+    }
+
+    .header {
+        min-height: 670px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header__main--description h1 {
+        max-width: 413px;
+        font-size: 31px;
+        line-height: 41px;
+    }
+
+    .header__main--description p {
+        max-width: 368px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .header__main--description>span {
+        max-width: 365px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .header__main--icon div p {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 185px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav__main--logo p {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .nav__main--title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .modal__dialog {
+        min-height: 480px;
+        max-width: 869px;
+    }
+
+    .thanks__main {
+        min-height: 480px;
+        max-width: 869px;
+    }
+
+    .header {
+        min-height: 560px;
+    }
+
+    .header__main--description h1 {
+        max-width: 346px;
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .header__main--description p {
+        max-width: 344px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .header__main--description>span {
+        max-width: 330px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .header__main--icon div p {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 185px;
+        margin-left: 10px;
+    }
+
+    .header__main--img {
+        max-width: 310px;
+    }
+
+    .header__main--icon div {
+        margin-bottom: 20px;
+
+        img {
+            max-width: 65px;
+        }
+    }
+
+    .quiz__main {
+        min-height: 490px;
+        max-width: 920px;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav__main--title {
+        display: none;
+    }
+
+    .nav__main--btn {
+        display: none;
+    }
+
+    .nav__main--mob {
+        display: block;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .modal {
+        align-items: flex-start;
+    }
+
+    .thanks {
+        align-items: flex-start;
+    }
+
+    .modal__dialog {
+        margin-top: 10px;
+        padding: 0 17px;
+        max-width: 315px;
+        min-height: 425px;
+    }
+
+    .thanks__main {
+        margin-top: 10px;
+        padding: 0 17px;
+        max-width: 315px;
+        min-height: 425px;
+    }
+
+    .thanks__main h4 {
+        font-size: 20px !important;
+        line-height: 24px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .thanks__main p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .thanks__main--icon {
+        margin-bottom: 30px;
+        max-width: 75px;
+    }
+
+    .modal__dialog--title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .modal__dialog--form div {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .modal__dialog img {
+        top: 15px;
+        right: 17px;
+        max-width: 24px;
+    }
+
+    .thanks__main button {
+        top: 15px;
+        right: 17px;
+
+        img {
+            max-width: 24px;
+        }
+    }
+
+    .modal__dialog--form {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .header__main {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 50px 0;
+    }
+
+    .header__main--description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .header__main--img {
+        display: none;
+    }
+
+    .header__main--description img {
+        display: block;
+        max-width: 280px;
+        margin-bottom: 25px;
+    }
+
+    .header__main--icon {
+        width: 100%;
+        max-width: 346px;
+    }
+
+    .header__main--icon div p {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 100%;
+        margin-left: 20px;
+    }
+
+    .quiz {
+        align-items: flex-start;
+    }
+
+    .quiz__main {
+        min-height: 575px;
+        max-width: 315px;
+        margin-top: 10px;
+        padding: 45px 17px 30px;
+    }
+
+    .quiz__main--btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz__main--btn button:last-child {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .quiz__main--close {
+        right: 17px;
+        top: 15px;
+        max-width: 24px;
+    }
+
+    .btn {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 14px 0;
+    }
+
+    .quiz__form {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .quiz__form--label {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .quiz__form--banks div {
+        width: 100% !important;
+    }
+
+    .quiz__form--wrapper {
+        margin-bottom: 15px;
+
+    }
+
+    .quiz__main--content {
+        width: 100%;
+    }
+
+    .btn__prev,
+    .btn__next {
+        max-width: 100%;
+    }
+
+    .quiz__main--content_description {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    .quiz__select--wrapper {
+        margin-bottom: 40px;
+    }
+
+    .quiz__form--select {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 14px 0 14px 20px;
+    }
+
+    .input {
+        padding: 14px 0 14px 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .quiz-thanks-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .quiz__main--thanks img {
+        max-width: 64px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .detail__btn,
+    .detail__btn--close {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .detail__main p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav__main--logo img {
+        max-width: 44px;
+    }
+
+    .nav__main--logo p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+
+    .header__main {
+        padding: 20px 0 50px;
+    }
+
+    .header__main--description {
+        margin-bottom: 50px;
+    }
+
+    .header__main--description h1 {
+        max-width: 280px;
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .header__main--description img {
+        display: block;
+        max-width: 220px;
+        margin-bottom: 25px;
+    }
+
+    .header__main--description p {
+        max-width: 235px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .header__main--description button {
+        margin-bottom: 15px;
+    }
+
+    .header__main--description>span {
+        max-width: 263px;
+        font-size: 16px;
+    }
+
+    .header__main--icon {
+        max-width: 280px;
+    }
+
+    .header__main--icon div p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+}
